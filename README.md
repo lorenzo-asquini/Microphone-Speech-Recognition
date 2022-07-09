@@ -44,7 +44,6 @@ The original audio can be saved directly to a .wav file and the output text is e
   wave
   atexit
   ```
-- An internet connection is required
 - Add any language you want using IETF BCP 47 language tags in [micRecognition.html](micRecognition/micRecognition.html):
   ```html
   <select name="language" id="language">
@@ -53,6 +52,7 @@ The original audio can be saved directly to a .wav file and the output text is e
       <option value="es-ES">Spanish</option>
   </select>
   ```
+- An internet connection is required
 
 
 ## Usage
