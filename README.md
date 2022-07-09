@@ -35,7 +35,14 @@ The original audio can be saved directly to a .wav file and the output text is e
 - [Google Chrome](https://www.google.com/chrome) must be installed on your machine
 - The following python libraries are needed for the program to fully function: 
   ```
-  selenium webdriver-manager os shutil time pyaudio wave atexit
+  selenium
+  webdriver-manager
+  os
+  shutil
+  time
+  pyaudio
+  wave
+  atexit
   ```
 - An internet connection is required
 - Add any language you want using IETF BCP 47 language tags in [micRecognition.html](micRecognition/micRecognition.html):
