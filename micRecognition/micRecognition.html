@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Microphone Recognition</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src = "script.js"></script>
+    <script src = "helper.js"></script>
+
+</head>
+
+<body>
+
+    <div class = "row">
+
+        <div id = "recognitionDefinition" class = "column left">
+            <p>Insert the output filename (in case of homonymity, the name will be similar):</p>
+            <input type="text" id="outputFileName" name="outputFileName" value="myFile">
+
+            <p>Select the language to recognise. Different languages may be recognised with difficulty:</p>
+            <select name="language" id="language">
+                <option value="it-IT">Italian</option>
+                <option value="en-US">English</option>
+                <option valye="es-ES">Spanish</option>
+             </select>
+
+            <br><br>
+
+            <label for="recording">Record audio:</label>
+            <input type="checkbox" id="recordingCheck" name="recording" checked>
+
+            <br>
+
+            <p id = "errorDefinition" style = "color:red;"></p>
+
+            <button onclick = "showCommands()" id = "commandsBtn">Confirm</button>
+        </div>
+
+        <div class = "column right">
+            <input type="button" id = "quitButton" onclick="fastQuit()" value="FAST QUIT">
+        </div>
+
+    </div>
+
+    <div id = "recognitionCommands" style = "display:none;">
+
+        <p id = "isRecording"></p>
+
+        <button onclick = "startRecognition()" id = "startBtn">Start</button>
+        <button onclick = "stopRecognition()" id = "stopBtn" disabled = "">Stop</button>
+
+        <br><br>
+
+        <h>Results:</h>
+
+        <p id="results"></p>
+
+    <div>
+
+</body>
+
+</html>
