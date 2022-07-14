@@ -125,7 +125,7 @@ while(True):
         file.write(currentResult)
         file.close()
 
-        shutil.copy(currentFileName+'.txt ', currentFileName+'_backup.txt')  #create with overwrite a backup of the file in case the next writing goes bad
+        shutil.copy(currentFileName+'.txt', currentFileName+'_backup.txt')  #create with overwrite a backup of the file in case the next writing goes bad
 
         if(recordAudio):
             audioData = stream.read(chunk)  #reads only last chunk, does not matter when stream started. Waits for all chunk to be created
