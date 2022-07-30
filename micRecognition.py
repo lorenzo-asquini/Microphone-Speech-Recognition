@@ -120,7 +120,7 @@ while(True):
 
     if(recognitionStarted and os.path.exists(currentFileName+".txt")):  #there is a rare case when recognitionStarted is True but the file is not created yet
 
-        file = open(currentFileName+".txt", "w")  #write the current results
+        file = open(currentFileName+".txt", "w", encoding='utf8', errors="ignore")  #write the current results
         currentResult = chrome.find_element(By.ID, "results").text
         file.write(currentResult)
         file.close()
