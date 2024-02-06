@@ -1,5 +1,5 @@
 # Microphone-Speech-Recognition
-> Use Google Speech-to-Text to recognize audio from your microphone, saving the result in a `.txt` file and the original audio in a `.wav` file.
+> Use Google's Speech-to-Text to recognize audio from your microphone, saving the result in a `.txt` file and the original audio in a `.wav` file.
 
 ## Table of Contents
 * [General Info](#general-information)
